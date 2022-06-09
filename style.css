@@ -10,10 +10,10 @@
 
 
 .container {
-    width: 100%;
-    height: 100vh;
-    background-color: #eee;
+    max-width: 100%;
+    max-height: 100vh;
     margin-bottom: 10em;
+    background-color: #ddd;
 }
 
 .brand {
@@ -73,7 +73,13 @@
     }
 }
 
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 568px){
+    .container {
+        max-width: 100%;
+        max-height: 200vh;
+        background-color: #ddd;
+    }
+
     .wrapper .row {
         display: flex;
         justify-content: space-between;
@@ -86,5 +92,34 @@
         flex-direction: column;
         width: 100%;
         padding: 20px;
+    }
+
+    .box {
+        margin-top: 30em;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .container {
+        max-width: 100%;
+        max-height: 200vh;
+        background-color: #ddd;
+    }
+    .wrapper .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .box .dream{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .box {
+        margin-top: 40em;
     }
 }
